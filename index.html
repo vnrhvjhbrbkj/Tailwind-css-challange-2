@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Challenge 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex w-screen h-screen justify-center items-center">
+        <div class="border border-black gap-5 rounded-md p-[30px] pr-0 pb-0 pt-0 overflow-x-hidden flex flex-row">
+            <div class="flex flex-col gap-5 py-[30px]">
+                <div class="flex flex-col">
+                    <h1 class="font-bold font-sans text-zinc-500">Card Number</h1>
+                    <div class="border border-b flex border-0 border-black w-full flex justify-between">
+                        <input type="Number" placeholder="1234 1234 1234 1234" class="outline-none">
+                        <img src="./Master Card.png" width="80px" alt="Master Card logo">
+                    </div>
+                </div>
+                <div class="flex flex-row gap-5">
+                    <div class="border border-b border-0 border-black flex flex-row gap-5 w-full">
+                        <div class="flex flex-col">
+                            <h1 class="font-bold font-sans text-zinc-500 mb-1">MM YY</h1> <input type="Date"
+                                class="outline-none w-[500px]">
+                        </div>
+                    </div>
+                    <div class="border border-b border-0 border-black flex flex-row gap-5 w-full">
+                        <div class="flex flex-col">
+                            <h1 class="font-bold font-sans text-zinc-500 mb-1">CVC Code</h1>
+                            <input type="Number" placeholder="1 2 3" class="outline-none">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="flex flex-col">
+                            <h1 class="font-bold font-sans text-zinc-500 mb-[50-px]">Name</h1>
+                            <div class="flex">
+                                <input type="Number" placeholder="Name"
+                                    class="outline-none border-b border-0 border-black w-[300px]">
+                                <button
+                                    class="rounded-full shadow-lg bg-purple-500 w-fit text-white px-10 py-4 font-bold text-lg hover:bg-purple-900  transition-all duration-500">
+                                    Pay Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-purple-500 text-bold p-[60px] flex justify-end flex-col text-white pb-5 text-[30px] items-center">
+                <img src="./Laptop.png" alt="laptop image" class="md:w-[300px] md:absolute mb-[60px]">
+                <p class="font-bold">Total</p>
+                <p class="font-bold text-3xl"><span class="text-[18px]">$ </span>1.099<span
+                        class="text-[18px]">.00</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
